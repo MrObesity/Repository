@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: #B2AEAD;
+}
+
+h1 {
+    text-align: center;
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace
+}
+</style>
+<title>Contact Page</title>
+</head>
+<body>
+<h1>Contact Us</h1>
+<div id="map" style="width:1665px;height:400px;background:yellow"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(51.5, -0.12),
+    zoom: 10,
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<p>Our site's phone number's are 696-696-6969 and 621-211-1052 </p>
+</body>
+</html>
